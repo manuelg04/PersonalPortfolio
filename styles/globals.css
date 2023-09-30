@@ -49,3 +49,19 @@
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 }
+
+/* Estilos para pantalla grande */
+.video {
+  width: 737px;
+  height: 678px;
+}
+
+/* Estilos para pantalla móvil */
+/* Estilos para pantalla móvil */
+@media (max-width: 640px) {
+  .video {
+    width: 200px; /* o el tamaño que prefieras */
+    height: 150px; /* ajusta según sea necesario */
+  }
+}
+
