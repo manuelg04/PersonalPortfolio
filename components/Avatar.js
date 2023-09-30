@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Avatar = () => {
   return (
-    <div className='hidden xl:flex xl:max-w-none w-128'>
+    <div className='hidden xl:flex w-86'>
       <video
         src={'/videomanuel.mp4'}
         width={737}
