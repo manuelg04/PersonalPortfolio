@@ -10,8 +10,10 @@ import { motion } from 'framer-motion';
 
 // variants
 import { fadeIn } from '../variants';
+import React, { useState } from 'react';
 
 const Home = () => {
+  const [modalVisible, setModalVisible] = useState(true); // Esto abrirá el modal automáticamente al cargar la página.
   return (
     <div className='bg-primary/60 h-full'>
       {/* text */}

@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import ReactPlayer from 'react-player';
-
 const Avatar = () => {
-  const [playing, setPlaying] = useState(false);
-
-  useEffect(() => {
-    setPlaying(true);
-  }, []);
-
   return (
-    <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]">
-      <ReactPlayer
-        url='/videomanuel.mp4'
-        playing={playing}
-        controls={true}
-        width='100%'
-        height='100%'
-      />
+    <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]"> 
+      {/* Estilos temporales para diagnóstico y dimensiones específicas para diferentes tamaños de pantalla */}
+      <video
+        src={'/videomanuel.mp4'}
+        controls
+        muted
+        playsInline
+        className="w-full h-full" 
+      >
+        Tu navegador no soporta el tag de video.
+      </video>
     </div>
   );
 };
