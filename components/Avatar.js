@@ -1,6 +1,6 @@
 const Avatar = () => {
   return (
-    <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]"> 
+    <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]" style={{ zIndex: 3 }}> 
       {/* Estilos temporales para diagnóstico y dimensiones específicas para diferentes tamaños de pantalla */}
       <video
         src={'/videomanuel.mp4'}
